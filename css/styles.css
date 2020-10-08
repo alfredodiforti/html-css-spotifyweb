@@ -1,0 +1,35 @@
+/* future fix */
+h2 {
+  color: white;
+}
+/* GENERAL RULES */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  position: relative;
+}
+.interface {
+  display: flex;
+  flex-direction: column;
+}
+/* STRUCTURE */
+.main {
+  display: flex;
+  flex-grow: 1;
+}
+.navbar {
+  flex-basis: 230px;
+  background-color: black
+}
+.scrollable {
+  flex-grow: 1;
+  background-color: #141921;
+}
+.player {
+  background-color: #272727;
+  flex-basis: 80px;
+}
