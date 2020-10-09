@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 body {
   height: 100vh;
@@ -31,6 +32,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+/* logo */
 .sidemenu .logo {
   height: 95px;
   display: flex;
@@ -40,9 +42,9 @@ body {
   width: 60%;
   margin-left: 20px;
 }
+  /* navigation */
 .sidemenu .navigation {
   color: white;
-
 }
 .sidemenu .navigation li {
 border-left: 2px solid black;
@@ -64,9 +66,52 @@ a {
   width: 25px;
   margin-right: 10px;
 }
+/* playlist */
+.sidemenu .playlist {
+  padding-left: 17px;
+  margin-top: 20px;
+}
+.sidemenu .playlist h3 {
+  font-size: 16px;
+  color: white;
+}
+.sidemenu .playlist .box {
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidemenu .playlist .box i {
+  color: black;
+  font-size: 18px;
+}
+.sidemenu .playlist a p {
+  font-size: 16px;
+  padding-left: 10px;
+}
+.sidemenu .playlist a {
+  display: flex;
+  align-items: center;
+}
+.sidemenu .playlist li {
+  color: white;
+  opacity: 0.6;
+  list-style: none;
+  font-size: 13px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* Account */
 .account {
   flex-basis: 80px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 17px;
+  padding-right: 17px;
 }
+/* Albumside */
 .albumside {
   flex-grow: 1;
   background-color: #141921;
@@ -83,7 +128,6 @@ a {
   display: flex;
   justify-content: flex-end;
 }
-
 .upgradepremium h3 {
   color: white;
   font-size: 13px;
@@ -96,7 +140,7 @@ a {
   margin-top: 25px;
   margin-bottom: 25px;
   margin-right: 25px;
-
+  font-weight: 600;
 }
 .scrollable {
   position: absolute;
