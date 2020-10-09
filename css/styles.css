@@ -105,12 +105,69 @@ a {
 }
 /* Account */
 .account {
-  flex-basis: 80px;
-  display: flex;
-  flex-direction: column;
   padding-left: 17px;
   padding-right: 17px;
 }
+/* install app */
+.account .install {
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+  opacity: 0.4;
+  display: flex;
+  flex-direction: column;
+}
+.account .install .circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3px;
+}
+.account .install .circle i {
+  font-size: 6px;
+  color: white;
+}
+.account .install a {
+  display: flex;
+  align-items: center;
+}
+.account .install p {
+  font-size: 12px;
+  margin-left: 10px;
+}
+/* login */
+.account .login {
+  margin-top: 12px;
+  margin-bottom: 7px;
+}
+.account .login .circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #7f7f7f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3px;
+}
+.account .login .circle i {
+  font-size: 16px;
+  color: white;
+}
+.account .login a {
+  display: flex;
+  align-items: center;
+}
+.account .login p {
+  font-size: 12px;
+  margin-left: 10px;
+  font-weight: 800;
+}
+
 /* Albumside */
 .albumside {
   flex-grow: 1;
