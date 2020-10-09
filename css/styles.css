@@ -1,12 +1,4 @@
-/* future fix */
-h2 {
-  color: white;
-}
-h3 {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  color: white;
-}
+
 /* GENERAL RULES */
 * {
   padding: 0;
@@ -26,6 +18,8 @@ body {
   display: flex;
   flex-grow: 1;
 }
+
+/* NAVBAR */
 .navbar {
   flex-basis: 230px;
   background-color: black;
@@ -34,6 +28,41 @@ body {
 }
 .sidemenu {
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.sidemenu .logo {
+  height: 95px;
+  display: flex;
+  justify-content: flex-start;
+}
+.sidemenu .logo img {
+  width: 60%;
+  margin-left: 20px;
+}
+.sidemenu .navigation {
+  color: white;
+
+}
+.sidemenu .navigation li {
+border-left: 2px solid black;
+display: flex;
+align-items: center;
+padding: 5px;
+padding-left: 15px;
+opacity: 0.6;
+}
+.sidemenu .navigation li:first-child {
+border-left: 2px solid #acfe2e;
+opacity: 1;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+.sidemenu .navigation li img {
+  width: 25px;
+  margin-right: 10px;
 }
 .account {
   flex-basis: 80px;
@@ -48,10 +77,26 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100px;
   z-index: 1;
-  background: rgb(0,71,197);
-  background: linear-gradient(131deg, rgba(0,71,197,0.7945378835127801) 4%, rgba(0,168,197,0.8393558106836485) 100%);
+  background: black;
+  opacity: 0.6;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.upgradepremium h3 {
+  color: white;
+  font-size: 13px;
+  border: 1px solid white;
+  border-radius: 50px;;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-right: 25px;
+
 }
 .scrollable {
   position: absolute;
