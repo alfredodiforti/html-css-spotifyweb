@@ -38,9 +38,16 @@ body {
   display: flex;
   justify-content: flex-start;
 }
-.sidemenu .logo img {
+#logomini {
+  width: 30px;
+  display: none;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+#logofull {
   width: 60%;
   margin-left: 20px;
+  display: inline-block;
 }
   /* navigation */
 .sidemenu .navigation {
@@ -66,10 +73,14 @@ a {
   width: 25px;
   margin-right: 10px;
 }
+.sidemenu .navigation ul li a {
+  display: block;
+}
 /* playlist */
 .sidemenu .playlist {
   padding-left: 17px;
   margin-top: 20px;
+  display: block;
 }
 .sidemenu .playlist h3 {
   font-size: 16px;
@@ -138,6 +149,7 @@ a {
 .account .install p {
   font-size: 12px;
   margin-left: 10px;
+  display: inline-block;
 }
 /* login */
 .account .login {
@@ -174,6 +186,7 @@ a {
   background-color: #141921;
   position: relative;
 }
+/* UPGRADEPREMIUM */
 .upgradepremium {
   position: absolute;
   top: 0;
@@ -199,6 +212,7 @@ a {
   margin-right: 25px;
   font-weight: 600;
 }
+/* SCROLLABLE */
 .scrollable {
   position: absolute;
   top: 0;
@@ -207,8 +221,223 @@ a {
   height: 100%;
   padding-top: 100px;
   overflow-y: auto;
+  display: flex;
+  flex-direction: column;
 }
+/* navmenu */
+.scrollable .navmenu {
+  margin-top: 30px;
+  align-self: center;
+  margin-bottom: 30px;
+}
+.scrollable .navmenu ul {
+  display: flex;
+  list-style: none;
+  opacity: 0.4;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.scrollable .navmenu ul li {
+  font-size: 13px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/* Contentalbum */
+.scrollable .listalbum {
+  display: flex;
+  margin-left: 5px;
+  margin-right: 15px;
+  margin-bottom: 25px;
+  flex-direction: column;
+}
+.scrollable .listalbum h2 {
+  color: white;
+  padding-bottom: 20px;
+  font-size: 23px;
+  padding-left: 10px;
+}
+.scrollable .listalbum .album {
+  display: flex;
+  flex-wrap: wrap;
+}
+.scrollable .listalbum .album .imgandtext {
+  flex-basis: calc(100% / 6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.circle {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.scrollable .listalbum .album .imgandtext img {
+  padding: 10px;
+  max-width: 100%;
+}
+.scrollable .listalbum .album .imgandtext:hover img {
+  background: black;
+  opacity: 0.4;
+  z-index: 1
+}
+.scrollable .listalbum .album .imgandtext h3 {
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+.scrollable .listalbum .album .imgandtext h4 {
+  color: white;
+  opacity: 0.4;
+  font-size: 12px;
+  font-weight: 600;
+}
+/* PLAYER */
 .player {
   background-color: #272727;
-  flex-basis: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+/* inascolto */
+.player .inascolto {
+  flex-basis: 260px;
+  display: flex;
+  align-items: center;
+}
+.player .inascolto img {
+  width: 40px;
+  margin: 10px;
+}
+.player .inascolto p {
+  font-size: 12px;
+  font-weight: 800;
+  color: white;
+}
+.player .inascolto p span {
+  font-size: 10px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+.player .inascolto i {
+  width: 15px;
+  color: white;
+  opacity: 0.5;
+  margin-left: 15px;
+}
+
+/* comandi */
+.player .comandi {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+}
+/* top */
+.player .comandi .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.player .comandi .top i {
+  width: 20px;
+  color: white;
+  margin: 10px;
+}
+.player .comandi i:nth-child(3) {
+  width: 30.5px;
+}
+.player .fa-play-circle::before {
+  font-size: 30px;
+}
+/* bottom */
+.player .bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.player .bottom span {
+  color: white;
+  opacity: 0.5;
+  font-size: 10px;
+}
+.player .bottom .line {
+  width: 400px;
+  height: 3px;
+  background-color: white;
+  opacity: 0.2;
+}
+/* VOLUME */
+.player .volume {
+  flex-basis: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.player .volume i {
+  width: 15px;
+  font-size: 13px;
+  color: white;
+  margin: 10px;
+}
+.player .volume .linevolume {
+  width: 130px;
+  height: 3px;
+  background-color: white;
+  opacity: 0.2;
+  margin-right: 15px;
+}
+
+/* MEDIAQUERY */
+
+@media screen and (max-width: 1024px) {
+  .scrollable .listalbum .album .imgandtext {
+    flex-basis: calc(100% / 4);
+}
+.player .bottom .line {
+  width: 250px;
+}
+}
+@media screen and (max-width: 860px) {
+  .scrollable .listalbum .album .imgandtext {
+    flex-basis: calc(100% / 2);
+}
+.player .bottom .line {
+  width: 150px;
+}
+.sidemenu .navigation ul li a {
+  display: none;
+}
+.sidemenu .playlist {
+  display: none;
+}
+.account .install p,
+.account .login p {
+  display: none;
+}
+.account .install {
+  border-bottom: none;
+}
+#logofull {
+  display: none;
+}
+#logomini {
+  display: inline-block;
+}
+.navbar {
+  flex-basis: 30px;
+}
+.player .volume .linevolume {
+  width: 70px;
+}
+.sidemenu .logo {
+  height: 50px;
+  justify-content: center;
+}
+.sidemenu .navigation li:first-child {
+border-left: 2px solid black;
+}
+.account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

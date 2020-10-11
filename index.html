@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/styles.css">
      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
@@ -15,7 +16,8 @@
       <div class="sidemenu">
         <!-- logo -->
         <div class="logo">
-          <img src="./img/logo.svg" alt="logo">
+          <img id="logomini" src="./img/logo-small.svg" alt="logosmall">
+          <img id="logofull" src="./img/logo.svg" alt="logo">
         </div>
         <!-- navigation -->
         <div class="navigation">
@@ -64,20 +66,131 @@
          <p>Alfredo Di Forti</p>
         </a>
         </div>
-
       </div>
     </nav>
+    <!-- ALBUMSIDE -->
     <div class="albumside">
+      <!-- upgradebar -->
       <div class="upgradepremium">
         <a href="#"><h3>EFFETTUA L'UPGRADE</h3></a>
       </div>
+      <!-- scrollable -->
       <div class="scrollable">
-      </div>
+        <div class="navmenu">
+          <ul>
+            <li> <a href="#">IN EVIDENZA</a> </li>
+            <li> <a href="#">PODCAST</a> </li>
+            <li> <a href="#">CLASSIFICHE</a> </li>
+            <li> <a href="#">GENERI E MOOD</a> </li>
+            <li> <a href="#">NUOVE USCITE</a> </li>
+            <li> <a href="#">SCOPRI</a> </li>
+          </ul>
+        </div>
+        <!-- Contentalbum -->
+        <div class="listalbum">
+          <h2>Recently Played</h2>
+          <div class="album">
+            <div class="imgandtext">
+              <img src="./img/metal_lifting.jpg" alt="metal">
+              <h3>Heavy Metal</h3>
+              <h4>Subtitle</h4>
+            </div>
+             <div class="imgandtext">
+              <img src="./img/stranger.jpeg" alt="stranger">
+              <h3>StrangerThings Vol.1</h3>
+              <h4>Kyle Dixton & Micheal Stein</h4>
+            </div>
+            <div class="imgandtext">
+              <img src="./img/aquietplace.jpeg" alt="quiete">
+              <h3>A quiet Place</h3>
+              <h4>Subtitle</h4>
+            </div>
+            <div class="imgandtext">
+              <img src="./img/split.jpeg" alt="split">
+              <h3>Split</h3>
+              <h4>Subtitle</h4>
+            </div>
+            <div class="imgandtext">
+              <img src="./img/cure.jpeg" alt="cure">
+              <h3>A cure for wellness</h3>
+              <h4>Subtitle</h4>
+            </div>
+            <div class="imgandtext">
+              <img src="./img/sinister.jpeg" alt="sinister">
+              <h3>Sinister</h3>
+              <h4>Subtitle</h4>
+            </div>
+          </div>
+        </div>
+        <div class="listalbum">
+          <h2>Creato per Jonh Doe</h2>
+          <div class="album">
+            <div class="imgandtext">
+              <img src="./img/radar.jpeg" alt="radar">
+              <h3>Release Radar</h3>
+            </div>
+            <div class="imgandtext">
+              <img src="./img/mixdaily.jpeg" alt="mix">
+              <h3>Daily Mix 1</h3>
+            </div>
+          </div>
+        </div>
+        <div class="listalbum">
+          <h2>Artisti più popolari</h2>
+          <div class="album">
+            <div class="imgandtext circle">
+              <img class="circle" src="./img/young.jpeg" alt="young">
+              <h3>Lana del Rey</h3>
+            </div>
+            <div class="imgandtext ">
+              <img class="circle" src="./img/einaudi.jpeg" alt="einaudi">
+              <h3>Ludovico Einaudi</h3>
+            </div>
+        </div>
     </div>
-
     </main>
+    <!-- PLAYER -->
     <footer class="player">
+      <!-- albuminplay -->
+      <div class="inascolto">
+        <img src="./img/sinister.jpeg" alt="sinister">
+        <p>Sinister <br> <span>Never Go In Dad's Office</span> </p>
+        <div class="">
+          <i class="far fa-heart"></i>
+          <i class="far fa-folder"></i>
+        </div>
+
+      </div>
+
+      <!-- COMANDI -->
+      <div class="comandi">
+        <!-- top -->
+        <div class="top">
+          <i class="fas fa-random"></i>
+          <i class="fas fa-step-backward"></i>
+          <i class="far fa-play-circle"></i>
+          <i class="fas fa-step-forward"></i>
+          <i class="fas fa-history"></i>
+        </div>
+        <!-- bottom -->
+        <div class="bottom">
+          <span>0.25</span>
+          <div class="line">
+          </div>
+          <span>4.35</span>
+        </div>
+      </div>
+      <!-- VOLUME -->
+      <div class="volume">
+        <i class="fas fa-list"></i>
+        <i class="fas fa-tv"></i>
+        <i class="fas fa-volume-up"></i>
+        <div class="linevolume">
+        </div>
+
+      </div>
     </footer>
+
 
   </body>
 </html>
