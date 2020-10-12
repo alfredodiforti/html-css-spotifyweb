@@ -61,7 +61,7 @@ padding: 5px;
 padding-left: 15px;
 opacity: 0.6;
 }
-.sidemenu .navigation li:first-child {
+.sidemenu .navigation li:hover {
 border-left: 2px solid #acfe2e;
 opacity: 1;
 }
@@ -242,6 +242,10 @@ a {
   font-size: 13px;
   padding-left: 10px;
   padding-right: 10px;
+  border-bottom: 2px solid #141921;
+}
+.scrollable .navmenu ul li:hover {
+  border-bottom: 2px solid #acfe2e;
 }
 /* Contentalbum */
 .scrollable .listalbum {
@@ -266,6 +270,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 .circle {
   border-radius: 50%;
@@ -275,10 +280,24 @@ a {
   padding: 10px;
   max-width: 100%;
 }
+.scrollable .listalbum .album .imgandtext i {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  color: white;
+  z-index: 1;
+  opacity: 0;
+}
+.scrollable .listalbum .album .imgandtext:hover i {
+  opacity: 1;
+}
 .scrollable .listalbum .album .imgandtext:hover img {
   background: black;
   opacity: 0.4;
-  z-index: 1
+  z-index: 1;
 }
 .scrollable .listalbum .album .imgandtext h3 {
   color: white;
