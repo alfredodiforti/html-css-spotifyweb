@@ -114,6 +114,9 @@ a {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.sidemenu .playlist li:hover {
+  opacity: 1;
+}
 /* Account */
 .account {
   padding-left: 17px;
@@ -126,6 +129,9 @@ a {
   opacity: 0.4;
   display: flex;
   flex-direction: column;
+}
+.account .install:hover {
+  opacity: 1
 }
 .account .install .circle {
   width: 10px;
@@ -193,8 +199,7 @@ a {
   left: 0;
   width: 100%;
   z-index: 1;
-  background: black;
-  opacity: 0.6;
+  background: rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: flex-end;
 }
@@ -211,6 +216,10 @@ a {
   margin-bottom: 25px;
   margin-right: 25px;
   font-weight: 600;
+    opacity: 0.6;
+}
+.upgradepremium h3:hover {
+  opacity: 1
 }
 /* SCROLLABLE */
 .scrollable {
@@ -233,7 +242,6 @@ a {
 .scrollable .navmenu ul {
   display: flex;
   list-style: none;
-  opacity: 0.4;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
@@ -243,9 +251,11 @@ a {
   padding-left: 10px;
   padding-right: 10px;
   border-bottom: 2px solid #141921;
+  opacity: 0.4;
 }
 .scrollable .navmenu ul li:hover {
   border-bottom: 2px solid #acfe2e;
+  opacity: 1;
 }
 /* Contentalbum */
 .scrollable .listalbum {
@@ -343,6 +353,10 @@ a {
   opacity: 0.5;
   margin-left: 15px;
 }
+.player .inascolto i:hover {
+  opacity: 1;
+  color: #acfe2e;
+}
 
 /* comandi */
 .player .comandi {
@@ -382,9 +396,15 @@ a {
 .player .bottom .line {
   width: 400px;
   height: 3px;
-  background-color: white;
-  opacity: 0.2;
+  background-color: rgba(255, 255, 255, 0.3);
 }
+.player .bottom .line .lineplay {
+  width: 100px;
+  height: 3px;
+  background-color:#acfe2e;
+  z-index: 1;
+}
+
 /* VOLUME */
 .player .volume {
   flex-basis: 260px;
@@ -401,9 +421,14 @@ a {
 .player .volume .linevolume {
   width: 130px;
   height: 3px;
-  background-color: white;
-  opacity: 0.2;
+  background-color: rgba(255, 255, 255, 0.3);
   margin-right: 15px;
+}
+.player .volume .linevolumeup {
+  width: 50px;
+  height: 3px;
+  background-color:#acfe2e;
+  position: relative;
 }
 
 /* MEDIAQUERY */
@@ -451,9 +476,6 @@ a {
 .sidemenu .logo {
   height: 50px;
   justify-content: center;
-}
-.sidemenu .navigation li:first-child {
-border-left: 2px solid black;
 }
 .account {
   display: flex;
